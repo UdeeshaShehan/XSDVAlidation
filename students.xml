@@ -1,0 +1,28 @@
+<?xml version="1.1"?>
+<!-- xsd11_datatype_test.xml
+ - Copyright (c) 2014, HerongYang.com, All Rights Reserved.
+-->
+
+<class 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation="students.xsd"> 
+   <student rollno = "393">
+      <firstname>Dinkar</firstname>    
+      <nickname>Dinkar</nickname>
+      <marks>85</marks>	 
+   </student>
+   
+   <student rollno = "493">	 
+      <firstname>Vaneet</firstname>
+      <lastname>Gupta</lastname>
+      <nickname>Vinni</nickname>
+      <marks>95</marks>
+   </student>
+   
+   <student rollno = "593">    
+      <firstname>Jasvir</firstname>
+      <lastname>Singh</lastname>
+      <nickname>Jazz</nickname>
+      <marks>90</marks>
+   </student>
+</class>

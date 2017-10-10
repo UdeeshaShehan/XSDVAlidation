@@ -1,0 +1,36 @@
+<?xml version="1.1"?>
+<!-- xsd11_datatype_test.xml
+ - Copyright (c) 2014, HerongYang.com, All Rights Reserved.
+-->
+
+<XSD11_Datatype_Test 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:noNamespaceSchemaLocation="xsd11_datatype_test.xsd">
+
+<!-- 3 valid "anyAtomicType" representations -->
+  <AnyAtomicType>   1971-05-16T00:00:01  </AnyAtomicType>
+  <AnyAtomicType>   &#x5934;             </AnyAtomicType>
+  <AnyAtomicType><![CDATA[   Hello <b>Herong</b>!   ]]>
+  </AnyAtomicType>
+ 
+<!-- 1 invalid "anyAtomicType" representations -->
+  <AnyAtomicType>   Hello <b size="9">Herong</b>! </AnyAtomicType>
+
+<!-- 1 valid "dateTimeStamp" representations -->
+  <DateTimeStamp>   1971-05-16T00:00:01Z   </DateTimeStamp>
+
+<!-- 1 invalid "dateTimeStamp" representations -->
+  <DateTimeStamp>   &#x5934;      </DateTimeStamp>
+
+<!-- 1 valid "dayTimeDuration" representations -->
+  <DayTimeDuration>    P3DT5H20M30.123S  </DayTimeDuration>
+
+<!-- 1 invalid "dayTimeDuration" representations -->
+  <DayTimeDuration>   P1Y2M3DT5H20M30.123S    </DayTimeDuration>
+
+<!-- 1 valid "yearMonthDuration" representations -->
+  <YearMonthDuration>    P1Y2M  </YearMonthDuration>
+
+<!-- 1 invalid "yearMonthDuration" representations -->
+  <YearMonthDuration>   P1Y2M3DT5H20M30.123S    </YearMonthDuration>
+</XSD11_Datatype_Test>
